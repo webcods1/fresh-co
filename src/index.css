@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  --color-accent-400: #4ade80;
+  --color-accent-500: #22c55e;
+
+  --color-surface-50: #fafaf9;
+  --color-surface-100: #f5f5f4;
+  --color-surface-200: #e7e5e4;
+  --color-surface-800: #1c1917;
+  --color-surface-900: #0c0a09;
+  --color-surface-950: #050403;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* From Uiverse.io by barisdogansutcu */ 
+.shop-now-btn {
+ position: relative;
+ overflow: hidden;
+ outline: none;
+ cursor: pointer;
+ border-radius: 50px;
+ background-color: var(--color-primary-600);
+ border: solid 4px var(--color-accent-400);
+ font-family: inherit;
+}
+
+.shop-now-btn .default-btn, .shop-now-btn .hover-btn {
+ background-color: var(--color-primary-600);
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ padding: 15px 30px;
+ border-radius: 50px;
+ font-size: 17px;
+ font-weight: 600;
+ text-transform: uppercase;
+ transition: all .3s ease;
+}
+
+.shop-now-btn .hover-btn {
+ position: absolute;
+ inset: 0;
+ background-color: var(--color-primary-700);
+ transform: translate(0%,100%);
+}
+
+.shop-now-btn .default-btn span {
+ color: #ffffff;
+}
+
+.shop-now-btn .hover-btn span {
+ color: var(--color-accent-400);
+}
+
+.shop-now-btn:hover .default-btn {
+ transform: translate(0%,-100%);
+}
+
+.shop-now-btn:hover .hover-btn {
+ transform: translate(0%,0%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
