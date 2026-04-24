@@ -15,7 +15,7 @@ export default function Footer() {
               <img 
                 src="/fresh&Co.png" 
                 alt="Fresh&Co Logo" 
-                className="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 filter brightness-0 invert" 
+                className="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
