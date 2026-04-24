@@ -27,8 +27,8 @@ export default function Contact() {
             <div className="mt-10 space-y-6">
               {[
                 { icon: '📍', label: 'Visit Us', value: 'Valanjery' },
-                { icon: '📞', label: 'Call Us', value: '+91 9539180404' },
-                { icon: '✉️', label: 'Email Us', value: 'hello@freshandco.com' },
+                { icon: '📞', label: 'Call Us', value: '+91 9746640206' },
+                { icon: '✉️', label: 'Email Us', value: 'freshco0206@gmail.com' },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-100 text-xl">{item.icon}</div>

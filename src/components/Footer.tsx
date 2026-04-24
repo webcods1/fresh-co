@@ -1,5 +1,5 @@
 const links = {
-  Product: ['Classic Chapati', 'Fluffy Bhatura', 'Ready Meals', 'Gift Cards'],
+  Product: ['Classic Chapathi', 'Chola Bhature'],
   Company: ['About Us', 'Careers', 'Blog', 'Press'],
   Support: ['Help Center', 'Delivery Areas', 'Returns', 'Contact'],
 };
