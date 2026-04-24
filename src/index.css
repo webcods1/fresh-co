@@ -29,6 +29,9 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -36,6 +39,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
 }
 
@@ -105,13 +110,14 @@
 
 /* From Uiverse.io by david-mohseni */ 
 .wrapper {
-  display: inline-flex;
+  display: flex;
   list-style: none;
-  height: 120px;
-  width: 100%;
-  padding-top: 40px;
-  font-family: "Poppins", sans-serif;
+  height: auto;
+  max-width: 100%;
+  padding: 20px 0;
+  font-family: inherit;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .wrapper .icon {
